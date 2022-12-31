@@ -1,0 +1,73 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 59px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    padding-top: 11px;
+    
+}
+
+.menu .button {
+    text-decoration: none;
+    margin-left: 16px;
+    padding: 7px 11px 7px 11px;
+    font-size: 15px;
+}
+
+.menu .button.cadastro {
+    background-color: hsla(108, 52%, 51%, 1);
+    border-radius: 10px;
+    padding: 10px 21px 10px 21px;
+    font-weight: 300;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.menu .button:visited{
+    color: black;
+}
+
+.menu .button.cadastro{
+    color: white;
+}
+
+.menu .button:hover {
+    background-color: hsla(108, 51%, 51%, 1);
+    color: hsla(0, 0%, 100%, 1);
+}
+
+@media (max-width:859px) {
+    .cabecalho {
+        display: block;
+        text-align: center;
+        padding: 0 ;
+    }
+
+    .logo{
+        display: block;
+        padding: 25px;
+    }
+
+    .menu {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .menu .button{
+        display: inline-block;
+        padding:10px 28px 10px 28px;
+        margin-left: 0px;    
+    }
+
+    .menu .button.cadastro{
+        margin: 20px;
+    }
+}
